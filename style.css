@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --body-bg-color: hsl(225, 100%, 94%);
+    --change: hsl(245, 75%, 52%);
+    --annual-plan-bg: hsl(225, 100%, 98%);
+    --p-text-color: hsl(224, 23%, 55%);
+}
+
+body {
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--body-bg-color);
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button, a {
+    cursor: pointer;
+}
+@media screen and (min-width: 640px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.main {
+    max-width: 35rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin: 10vh auto;
+    padding-bottom: 2.5rem ;
+    height: 70vh;
+}
+
+
+.hero-img {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.content-wrapper {
+    text-align: center;
+    padding: 0 3rem 0 3rem;
+}
+
+h1 {
+    padding-top: 2rem;
+    margin: 0;
+}
+p {
+    color: hsl(224, 23%, 55%);
+    line-height: 1.8;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.annual-plan-wrapper {
+    margin-bottom: 1rem;;
+    padding: 1.5rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.annual-price-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.year-price-wrapper {
+   flex-flow: column wrap;
+   margin: 0 0 0 1rem;
+}
+
+h4,h5 {
+    margin: 0;
+    padding: 0.2rem;
+}
+
+h5 {
+    color: hsl(224, 23%, 55%);
+    
+}
+
+a {
+    color:hsl(245, 75%, 52%);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#pay-btn {
+    width: 100%;
+    background-color: var(--change);
+    padding: 1rem 4rem;
+    border: none;
+    outline: none;
+    border-radius:1rem ;
+    color: white;
+    box-shadow: 0 20px 20px 10px hsl(225, 100%, 94%);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.cancel-btn {
+    text-decoration: none;
+    color: var(--p-text-color);
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
