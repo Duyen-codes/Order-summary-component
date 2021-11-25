@@ -31,7 +31,6 @@ button, a {
     }
 }
 
-
 .main {
     max-width: 35rem;
     background-color: white;
@@ -56,6 +55,7 @@ h1 {
     padding-top: 2rem;
     margin: 0;
 }
+
 p {
     color: hsl(224, 23%, 55%);
     line-height: 1.8;
