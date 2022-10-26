@@ -43,6 +43,7 @@ button, a {
     background-color: white;
     border-radius: 2rem;
     margin: 0 2rem;
+    max-width: 480px;
 }
 
 .hero-img {
